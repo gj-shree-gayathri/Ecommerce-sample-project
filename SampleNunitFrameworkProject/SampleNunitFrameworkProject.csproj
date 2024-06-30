@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -13,6 +13,8 @@
 		<PackageReference Include="coverlet.collector" Version="6.0.0" />
 		<PackageReference Include="DotNetSeleniumExtras.PageObjects" Version="3.11.0" />
 		<PackageReference Include="DotNetSeleniumExtras.PageObjects.Core" Version="4.14.1" />
+		<PackageReference Include="ExtentReports" Version="4.1.0" />
+		<PackageReference Include="ExtentReports.Core" Version="1.0.3" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
 		<PackageReference Include="NUnit" Version="3.14.0" />
 		<PackageReference Include="NUnit.Analyzers" Version="3.9.0" />
@@ -26,6 +28,12 @@
 
   <ItemGroup>
     <Using Include="NUnit.Framework" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="TestData\TestData.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 	<Target Name="CopyCustomContent" AfterTargets="AfterBuild">

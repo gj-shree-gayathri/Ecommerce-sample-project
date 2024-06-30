@@ -1,0 +1,11 @@
+{
+  "username": "rahulshettyacademy",
+  "password": "learning",
+  "expProducts": [
+    "iphone X",
+    "Samsung Note 8"
+  ],
+  "username-wrong": "rahulshettyacademy-test",
+  "password-wrong": "learning-test"
+
+}
